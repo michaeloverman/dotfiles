@@ -106,55 +106,9 @@ export ANDROID_HOME=/Users/michaeloverman/Library/Android/sdk
 export PATH=/Users/michaeloverman/Library/Android/sdk/platform-tools/:$PATH
 export PATH=/Users/michaeloverman/android-sdks/tools/:$PATH
 #export PATH=/Users/michaeloverman/android-sdks/platform-tools/:$PATH
-alias em27='~/Library/Android/sdk/tools/emulator -avd API27 -dns-server 8.8.8.8'
-alias em28='~/Library/Android/sdk/tools/emulator -avd API28 -dns-server 8.8.8.8'
-alias em28g='~/Library/Android/sdk/tools/emulator -avd API28g -dns-server 8.8.8.8'
-alias em29='~/Library/Android/sdk/tools/emulator -avd API29 -dns-server 8.8.8.8'
-alias em29g='~/Library/Android/sdk/tools/emulator -avd API29g -dns-server 8.8.8.8'
-alias sshus='ssh eventpilot@eventpilot.us'
-alias sftpus='sftp eventpilot@mdb.eventpilot.us'
-alias sftpcom0='sftp eventpilot@mdb.eventpilotadmin.com'
-alias sftpcom1='sftp eventpilot@vps1.eventpilotadmin.com'
-alias sshme='ssh eventpilot@eventpilot.me'
-alias com0='ssh eventpilot@mdb.eventpilotadmin.com'
-alias com1='ssh eventpilot@vps1.eventpilotadmin.com'
-alias co0='ssh eventpilot@mdb.eventpilot.co'
-alias co1='ssh eventpilot@vps1.eventpilot.co'
-alias us0='ssh eventpilot@mdb.eventpilot.us'
-alias us1='ssh eventpilot@vps1.eventpilot.us'
-alias com='csshx --host ~/Desktop/save/com_hosts.txt'
-alias  us='csshx --host ~/Desktop/save/us_hosts.txt'
-alias  co='csshx --host ~/Desktop/save/co_hosts.txt'
-alias cis1='ssh ativ@208.52.190.185'
-alias cis2='ssh ativsoftware@208.52.154.81'
-alias cis3='ssh ativ@208.52.168.102'
-alias cis4='ssh administrator@207.254.60.149'
-alias cis='csshx --host ~/Desktop/save/cis_hosts.txt'
-alias game='csshx --host ~/Desktop/save/game_hosts.txt'
-alias newscan='csshx --host ~/Desktop/save/new_scanhunt.txt'
-alias package='ssh ativ_package@package.eventpilotadmin.com'
-alias updateall='updateall.sh'
-alias devices='adb devices'
-alias 920='cd ~/Documents/EventPilot_9_2_0_App_Branch/'
-alias 920s='cd ~/Documents/EventPilot_9_2_0_Server_Branch/'
-alias 900='cd ~/Documents/EventPilot_9_0_0_App_Branch/'
-alias 900s='cd ~/Documents/EventPilot_9_0_0_Server_Branch/'
-alias 910='cd ~/Documents/Eventpilot_9_1_0_App_Branch/'
-alias 910s='cd ~/Documents/Eventpilot_9_1_0_Server_Branch/'
-alias 911='cd ~/Documents/EventPilot_9_1_1_App_Branch'
-alias 911s='cd ~/Documents/EventPilot_9_1_1_Server_Branch'
-alias temp='cd ~/Desktop/temp'
-alias mscA='cd ~/Documents/Android Projects/MsCount2'
-alias mscI='cd ~/Documents/iOS Projects/MsCount'
-alias ~='cd ~'
-alias uiui='/Users/michaeloverman/Library/Android/sdk/tools/bin/uiautomatorviewer > /dev/null &'
-alias sp='cat ../../../../doc/EventPilotWeb/eventpilotapp.txt'
-alias fingmouth='date "+ %Y-%m-%d %H:%M:%S" >> ~/MikahsFingersMouth.txt'
-alias gitmc="/Users/michaeloverman/Documents/Android Projects/MsCount2 git push -u origin master"
-alias gitios="/Users/michaeloverman/Documents/BigNerd git push -u origin master"
-alias ll="ls -la"
-alias wh="pwd"
-alias gacp="git add * && git commit && git push -u origin master"
+
+# All my aliases in one place, sourced both here and bash
+source .aliases
 
 # Setting PATH for Python 3.7
 # The original version is saved in .bash_profile.pysave
@@ -175,3 +129,6 @@ if [ -f '/Users/michaeloverman/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/michaeloverman/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/michaeloverman/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Don't put anything below this line
+[ -f ".zshrc.local" ] && source ".zshrc.local"
