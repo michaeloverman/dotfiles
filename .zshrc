@@ -108,7 +108,7 @@ export PATH=/Users/michaeloverman/android-sdks/tools/:$PATH
 #export PATH=/Users/michaeloverman/android-sdks/platform-tools/:$PATH
 
 # All my aliases in one place, sourced both here and bash
-source .aliases
+source ~/dotfiles/.aliases
 
 # Setting PATH for Python 3.7
 # The original version is saved in .bash_profile.pysave

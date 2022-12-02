@@ -2,6 +2,8 @@ set nocompatible
 set number
 set relativenumber
 set autoindent
+set tabstop=4
+set shiftwidth=4
 set showcmd
 set incsearch
 set hlsearch
