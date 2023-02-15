@@ -3,12 +3,12 @@ set number
 set relativenumber
 set autoindent
 set tabstop=4
+set scrolloff=5
 set shiftwidth=4
 set showcmd
 set incsearch
 set hlsearch
 set lines=40
-set columns=120
 syntax on
 
 let g:netrw_liststyle=3

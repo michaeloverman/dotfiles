@@ -4,6 +4,7 @@ alias em28g='~/Library/Android/sdk/tools/emulator -avd API28g -dns-server 8.8.8.
 alias em29='~/Library/Android/sdk/tools/emulator -avd API29 -dns-server 8.8.8.8'
 alias em29g='~/Library/Android/sdk/tools/emulator -avd API29g -dns-server 8.8.8.8'
 alias devices='adb devices'
+alias sendlink='~/dotfiles/sendlink.sh'
 alias uiui='/Users/michaeloverman/Library/Android/sdk/tools/bin/uiautomatorviewer > /dev/null &'
 
 alias updateall='updateall.sh'
@@ -20,7 +21,7 @@ alias gitmc="/Users/michaeloverman/Documents/Android Projects/MsCount2 git push 
 alias gitios="/Users/michaeloverman/Documents/BigNerd git push -u origin master"
 alias ll="ls -la"
 alias wh="pwd"
-alias gacp="git add * && git commit && git push -u origin master"
+alias gacp="git add * && git commit && git push"
 alias gs="git status"
 alias gp="git push -u origin master"
 
