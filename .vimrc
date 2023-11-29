@@ -16,6 +16,13 @@ let g:netrw_browse_split=3
 let g:netrw_sort_by="time"
 let g:netrw_sort_direction="reverse"
 
+let &t_SI.="\e[5 q" "SI = INSERT mode
+let &t_SR.="\e[4 q" "SR = REPLACE mode
+let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
+set ttimeout
+set ttimeoutlen=1
+set ttyfast
+
 " call plug#begin('~/.vim/plugged')
 
 " Plug 'gruvbox-community/gruvbox'
